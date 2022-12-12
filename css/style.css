@@ -1,0 +1,145 @@
+/* REGOLE GENERALI */
+:root {
+    --my-dark-color: #3a546d;
+    --my-darkest-color: #2c3e50;
+    --my-light-color: #1abc9c;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-my-dark {
+    background-color: var(--my-dark-color);
+}
+
+.bg-my-darkest {
+    background-color: var(--my-darkest-color);
+}
+
+.bg-my-light {
+    color: var(--my-light-color);
+}
+
+.text-my-light {
+    color: var(--my-light-color);
+}
+
+.btn-my-light {
+    background-color: var(--my-light-color);
+    color: white;
+}
+
+.btn-my-light:hover {
+    background-color: var(--my-light-color);
+    color: white;
+    opacity: 0.7;
+}
+
+.my-input-style {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 1.25rem;
+}
+
+
+/* HEADER */
+
+header .inverted-hamb {
+    filter: invert(1);
+}
+
+
+/* MAIN */
+#jumbotron {
+    background-color: var(--my-light-color);
+}
+
+.main-img {
+    max-width: 300px;
+}
+
+.decorative-element-container::before,
+.decorative-element-container::after {
+    content: "";
+    width: 12%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.decorative-element-container > i {
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.decorative-element-container.dark-dashes::before,
+.decorative-element-container.dark-dashes::after {
+    background-color: var(--my-darkest-color);
+}
+
+.decorative-element-container.dark-dashes > i {
+    color: var(--my-darkest-color);
+}
+
+
+#about {
+    background-color: var(--my-light-color);
+}
+
+.main-subtitle {
+    font-size: 1.5rem;
+}
+
+.download-button {
+    background-color: var(--my-light-color);
+    border: 1px solid white;
+    border-color: white;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+
+/* FOOTER */
+.social-box a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+#footer-top a {
+    text-decoration: none;
+}
+
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    .main-title {
+        font-size: 4rem;
+    }
+
+    .main-subtitle {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+
